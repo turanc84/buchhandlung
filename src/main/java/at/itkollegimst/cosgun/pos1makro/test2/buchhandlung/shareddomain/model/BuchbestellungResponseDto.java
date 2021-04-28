@@ -1,7 +1,7 @@
 package at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.shareddomain.model;
 
 
-public class Buchbestellung
+public class BuchbestellungResponseDto
 {
 
     String bestellungsnummer;
@@ -9,7 +9,7 @@ public class Buchbestellung
     boolean verfügbar;
 
 
-    public Buchbestellung(String bestellungsnummer, double preis, boolean verfügbar) {
+    public BuchbestellungResponseDto(String bestellungsnummer, double preis, boolean verfügbar) {
         this.bestellungsnummer = bestellungsnummer;
         this.preis = preis;
         this.verfügbar = verfügbar;
