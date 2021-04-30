@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/bestellung/bestellung.iml" filepath="$PROJECT_DIR$/bestellung/bestellung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/buchhandlung/buchhandlung.iml" filepath="$PROJECT_DIR$/buchhandlung/buchhandlung.iml" />
+      <module fileurl="file://$PROJECT_DIR$/druckerei/druckerei.iml" filepath="$PROJECT_DIR$/druckerei/druckerei.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/makrotestdobl.iml" filepath="$PROJECT_DIR$/.idea/makrotestdobl.iml" />
+    </modules>
+  </component>
+</project>
