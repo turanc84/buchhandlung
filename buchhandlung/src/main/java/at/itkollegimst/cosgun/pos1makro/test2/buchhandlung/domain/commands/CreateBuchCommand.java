@@ -2,12 +2,13 @@ package at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.domain.commands;
 
 import lombok.Value;
 
-
+@Value
 public class CreateBuchCommand {
 
 
     private String BuchNummer;
     private String BuchName;
+
 
 
     public CreateBuchCommand(String Buchnummer, String Buchname)
@@ -21,15 +22,11 @@ public class CreateBuchCommand {
         return BuchNummer;
     }
 
-    public void setBuchNummer(String buchNummer) {
-        BuchNummer = buchNummer;
-    }
+
 
     public String getBuchName() {
         return BuchName;
     }
 
-    public void setBuchName(String buchName) {
-        BuchName = buchName;
-    }
+
 }
