@@ -18,22 +18,29 @@ public class Buch extends AbstractAggregateRoot
 
     @Column(unique = true)
 
-    private String BuchNummer;
+    private String buchNummer;
 
-    private String BuchName;
+    private String buchName;
+
+    public Buch(){
+
+    }
 
     public Buch(CreateBuchCommand createBuchCommand){
 
         this.id = id;
-        this.BuchNummer = createBuchCommand.getBuchNummer();
-        this.BuchName = createBuchCommand.getBuchName();
+        this.buchNummer = createBuchCommand.getBuchNummer();
+        this.buchName = createBuchCommand.getBuchName();
 
         addDomainEvent(new BuchCreatedEvent(
                 new BuchCreatedEventData(
-                        this.BuchNummer,
-                        this.BuchName
+                        this.buchNummer,
+                        this.buchName
                 )
         ));
+
+
+
     }
 
     public Long getId() {
@@ -41,15 +48,15 @@ public class Buch extends AbstractAggregateRoot
     }
 
     public String getBuchNummer() {
-        return BuchNummer;
+        return buchNummer;
     }
 
     public String getBuchName() {
-        return BuchName;
+        return buchName;
     }
 
 
-    private addDomainEvent(Object event){
+    private void addDomainEvent(Object event){
         registerEvent(event);
     }
 }
