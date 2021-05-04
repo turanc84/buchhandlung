@@ -7,20 +7,28 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="bestellung" />
+        <module name="demo (2)" />
         <module name="druckerei" />
-        <module name="buchhandlung" />
+        <module name="demo (1)" />
+        <module name="bestellungservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="bestellung" target="11" />
+      <module name="bestellungservice" target="11" />
       <module name="buchhandlung" target="11" />
+      <module name="demo (1)" target="11" />
+      <module name="demo (2)" target="11" />
       <module name="druckerei" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="bestellung" options="-parameters" />
+      <module name="bestellungservice" options="-parameters" />
       <module name="buchhandlung" options="-parameters" />
+      <module name="demo (1)" options="-parameters" />
+      <module name="demo (2)" options="-parameters" />
       <module name="druckerei" options="-parameters" />
     </option>
   </component>

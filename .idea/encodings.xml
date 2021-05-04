@@ -3,9 +3,13 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/bestellung/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/bestellung/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/buchhandlung/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/buchhandlung/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bestellungservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/bestellungservice/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/buchhandlungservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/buchhandlungservice/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/druckerei/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/druckerei/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/druckereiservice/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/druckereiservice/src/main/resources" charset="UTF-8" />
   </component>
 </project>
