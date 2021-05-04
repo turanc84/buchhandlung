@@ -2,14 +2,13 @@ package at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.api.rest;
 
 
 import at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.api.rest.dtos.CreateBuchDto;
+import at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.exceptions.BuchNotFoundException;
 import at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.exceptions.BuchnummerDiplicateException;
 import at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.services.BuchCommandService;
 import at.itkollegimst.cosgun.pos1makro.test2.buchhandlung.services.BuchQueryService;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.net.URI;
@@ -47,5 +46,11 @@ public class BuchController {
     }
 
 
+    @GetMapping("/{buchnummer}")
+    public ResponseEntity<CreateBuchDto> getBuch(@PathVariable String buchnummer) throws BuchNotFoundException
+    {
+        return new ResponseEntity<>(BuchEntityDtoMapper.createBuchDto(buchQueryService.getBuchbyBuchnummer(buchnummer)),
+                HttpStatus.OK);
+    }
 
 }
