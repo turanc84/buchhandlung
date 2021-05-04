@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bestellung/bestellung.iml" filepath="$PROJECT_DIR$/bestellung/bestellung.iml" />
       <module fileurl="file://$PROJECT_DIR$/bestellungservice/bestellungservice.iml" filepath="$PROJECT_DIR$/bestellungservice/bestellungservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/buchhandlungservice/demo (1).iml" filepath="$PROJECT_DIR$/buchhandlungservice/demo (1).iml" />
       <module fileurl="file://$PROJECT_DIR$/druckereiservice/demo (2).iml" filepath="$PROJECT_DIR$/druckereiservice/demo (2).iml" />
-      <module fileurl="file://$PROJECT_DIR$/druckerei/druckerei.iml" filepath="$PROJECT_DIR$/druckerei/druckerei.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/makrotestdobl.iml" filepath="$PROJECT_DIR$/.idea/makrotestdobl.iml" />
     </modules>
   </component>
