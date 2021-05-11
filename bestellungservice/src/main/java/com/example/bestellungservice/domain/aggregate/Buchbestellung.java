@@ -45,7 +45,7 @@ public class Buchbestellung extends AbstractAggregateRoot {
         this.buchstart = createBuchbestellungCommand.getBuchstart();
         this.buchziel = createBuchbestellungCommand.getBuchziel();
 
-
+        //Domainevent
     }
 
 
