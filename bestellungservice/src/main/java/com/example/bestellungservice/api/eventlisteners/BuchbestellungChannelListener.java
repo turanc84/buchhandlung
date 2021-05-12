@@ -4,10 +4,12 @@ package com.example.bestellungservice.api.eventlisteners;
 import com.example.bestellungservice.infrastructure.messagebroker.BuchbestellungChannels;
 import com.example.bestellungservice.services.BuchbestellungCommandService;
 import com.example.bestellungservice.shareddomain.events.BuchbestellungCreatedEvent;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 
 @EnableBinding(BuchbestellungChannels.class)
+@Slf4j
 public class BuchbestellungChannelListener {
 
 
