@@ -46,7 +46,7 @@ public class BuchbestellungController {
 
             URI location = ServletUriComponentsBuilder
                     .fromCurrentRequest()
-                    .path("/{Buchbestellungnummer}")
+                    .path("/{bestellnummer}")
                     .buildAndExpand(createBuchbestellungDto.getBestellnummer())
                     .toUri();
 
@@ -55,7 +55,7 @@ public class BuchbestellungController {
 
     }
 
-    @GetMapping("/{Buchbestellungnummer}")
+    @GetMapping("/{bestellnummer}")
     public ResponseEntity<CreateBuchbestellungDto> getBuchbestellung(@PathVariable String bestellnummer) throws BuchbestellungNotFoundException
     {
 
