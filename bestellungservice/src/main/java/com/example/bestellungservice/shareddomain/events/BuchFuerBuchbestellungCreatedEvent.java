@@ -18,7 +18,6 @@ public class BuchFuerBuchbestellungCreatedEvent {
 
     }
 
-
     public BuchFuerBuchbestellungCreatedEventData getBuchFuerBuchbestellungCreatedEventData() {
         return buchFuerBuchbestellungCreatedEventData;
     }

@@ -2,6 +2,8 @@ package com.example.bestellungservice.domain.aggregate;
 
 
 import com.example.bestellungservice.domain.commands.CreateBuchbestellungCommand;
+import com.example.bestellungservice.shareddomain.events.BuchbestellungCreatedEvent;
+import com.example.bestellungservice.shareddomain.events.BuchbestellungCreatedEventData;
 import lombok.Data;
 import org.springframework.data.domain.AbstractAggregateRoot;
 
@@ -46,6 +48,27 @@ public class Buchbestellung extends AbstractAggregateRoot {
         this.buchziel = createBuchbestellungCommand.getBuchziel();
 
         //Domainevent
+        addDomainEvent(new BuchbestellungCreatedEvent(
+
+                new BuchbestellungCreatedEventData(
+                        this.bestellnummer,
+                        this.buchNummer,
+                        this.bezahltJa,
+                        this.verfügbarJa,
+                        this.buchstart,
+                        this.buchziel
+
+
+
+                )
+
+
+        ));
+
+    }
+
+    private void addDomainEvent(Object event){
+        registerEvent(event);
     }
 
 

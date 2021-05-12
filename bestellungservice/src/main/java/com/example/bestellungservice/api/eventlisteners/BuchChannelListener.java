@@ -26,7 +26,7 @@ public class BuchChannelListener {
 
 
         log.info("Listened to Message Briger -> Buch Creations: " + buchCreatedEvent.getBuchCreatedEventData());
-        buchCommandService.createBuch(BuchCreatedEventToCommand.toCommand(BuchCreatedEvent));
+        buchCommandService.createBuch(BuchCreatedEventToCommand.toCommand(buchCreatedEvent));
 
 
     }
